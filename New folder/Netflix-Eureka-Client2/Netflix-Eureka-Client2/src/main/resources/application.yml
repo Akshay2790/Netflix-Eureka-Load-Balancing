@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-eureka-client
+server:
+  port: 8993
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8990/eureka}
+  instance:
+    preferIpAddress: true
